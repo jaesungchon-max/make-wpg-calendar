@@ -826,3 +826,12 @@ Initial deployment confirmed by user: calendar visible, previous month navigatio
 **Functional correction:** Out of month cells are now noninteractive blank div elements, rather than disabled buttons, to prevent unwanted native outlined button circles. Previously verified next month arrow clickable area retained.
 
 **Testing still required:** Deploy and visually compare against approved desktop reference at 100% zoom; check calendar and panel states, 4/5/6 week months, smartphone layout, arrow navigation and category filters. Grey/white contrast, particularly for small text, requires accessibility review; #A8A8A8 is provisional. No production build was run in this environment.
+
+
+## Development log | 29 October 2026 | Stage 1 Revision 1.3
+
+**Approved changes:** Retain desktop's large upper left OCTOBER | 2026 and upper right header group. Replace MAKE WPG | Calendar with MAKE WPG CALENDAR, using bold MAKE WPG and lighter CALENDAR. Align the left edges of MAKE and ABOUT within the existing upper right header position. Refine navigation spacing and align weekday labels, date numbers and dots. Slightly enlarge event indicators.
+
+**Smartphone:** Preserve existing calendar height and week row proportions. Apply mobile only grey background #929292, improve dotted grid visibility, slightly strengthen date numerals and enlarge dots to 6px. Desktop background remains #A8A8A8.
+
+**Verification required:** Confirm desktop header alignment at typical browser widths, mobile readability and contrast, arrow hit areas, and daily event panel. Mobile white text on #929292 still needs WCAG contrast evaluation, particularly for small labels. This revision has not yet been production built or browser tested.
