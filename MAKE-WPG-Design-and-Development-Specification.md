@@ -810,3 +810,19 @@ The prototype should be reviewed and refined before connecting the production da
 **Items to validate in browser:** alignment and spacing against mockups, mobile touch targets, contrast/accessibility, overflow at all widths, font matching, real imagery, date and time formatting, calendar exports, and category/search interaction. Formal test and production build have not yet been completed in this package.
 
 **Deferred to later phases:** Supabase persistence and storage, editorial review, authentication, public submissions, source discovery, email services, archives, and public launch.
+
+
+## Development log | 29 October 2026 | Stage 1.1
+
+Initial deployment confirmed by user: calendar visible, previous month navigation works, daily event list and event details work, mobile view works. Next month arrow fails on desktop when the event panel is closed, but works with the panel open. A CSS adjustment relocates the interactive hit area inward while keeping the arrow visually near the right edge. This is a proposed fix and requires verification on the deployed website.
+
+
+## Development log | 29 October 2026 | Stage 1 Revision 1.2
+
+**Approved master reference:** The supplied desktop mockup with large OCTOBER | 2026 at upper left and MAKE WPG CALENDAR at upper right is authoritative. Earlier suggestions to move the identity to the upper left and place a small year/month beneath it are superseded. The ABOUT / SUBMIT / SUBSCRIBE / search navigation remains immediately below the upper right identity.
+
+**Visual implementation prepared:** Desktop header rearranged to match the approved hierarchy; weekday and date typographic scale increased; weekday labels, date numbers and event dots share column alignment; vertical boundaries use a fine white dotted rule; event dots enlarged; background adjusted to provisional neutral grey #A8A8A8. Desktop calendar proportions and functional controls retained.
+
+**Functional correction:** Out of month cells are now noninteractive blank div elements, rather than disabled buttons, to prevent unwanted native outlined button circles. Previously verified next month arrow clickable area retained.
+
+**Testing still required:** Deploy and visually compare against approved desktop reference at 100% zoom; check calendar and panel states, 4/5/6 week months, smartphone layout, arrow navigation and category filters. Grey/white contrast, particularly for small text, requires accessibility review; #A8A8A8 is provisional. No production build was run in this environment.
