@@ -835,3 +835,8 @@ Initial deployment confirmed by user: calendar visible, previous month navigatio
 **Smartphone:** Preserve existing calendar height and week row proportions. Apply mobile only grey background #929292, improve dotted grid visibility, slightly strengthen date numerals and enlarge dots to 6px. Desktop background remains #A8A8A8.
 
 **Verification required:** Confirm desktop header alignment at typical browser widths, mobile readability and contrast, arrow hit areas, and daily event panel. Mobile white text on #929292 still needs WCAG contrast evaluation, particularly for small labels. This revision has not yet been production built or browser tested.
+
+
+## Revision 1.4 | 29 October 2026 | Daily Event Listings
+
+Implementation scope: desktop panel heading aligned to the top of the weekday labels; subtle solid panel divider distinct from the dotted calendar grid; modestly larger desktop event time, title, venue and category text; full row click targets and desktop hover feedback. Smartphone close (×) and CALENDAR back controls, event category size, row height, and overall layout retained. Added original abstract SVG sample artwork and sample morning, afternoon, all day, long title, no image and multiday events. All sample events are fictional and not public listings. Chronological sorting now handles AM/PM and ALL DAY. Review pending deployment and browser testing.
