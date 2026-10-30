@@ -144,3 +144,12 @@
      The existing left padding and separator remain unchanged. */
   .side-panel { margin-right:clamp(18px,2.1vw,30px); }
 }
+
+/* Revision 1.6.1: separate the scrollbar from the event content.
+   The existing margin-right insets the scrollbar from the panel edge;
+   padding-right creates a matching internal breathing space. */
+@media (min-width:760px) {
+  .site:has(.side-panel) .side-panel {
+    padding-right: clamp(18px, 2.1vw, 30px);
+  }
+}
