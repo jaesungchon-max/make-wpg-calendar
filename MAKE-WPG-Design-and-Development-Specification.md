@@ -845,3 +845,13 @@ Implementation scope: desktop panel heading aligned to the top of the weekday la
 ## Revision 1.5 | 29 October 2026 | Event Details
 
 Approved: desktop DAILY EVENTS navigation aligns with weekday labels; desktop image approximately 16:9; slightly enlarged supporting text; single independent desktop panel scroll with fixed calendar; mobile image, title, date/time, navigation, and full page scrolling retained; mobile description line spacing increased. Venue address is a clickable Google Maps search link, using full address when supplied and venue name plus Winnipeg as fallback for vague sample addresses. Optional LINK field displays Visit Event Page and opens in a new tab; absent links are hidden. Add to Calendar and Share retained. The NEWHAWK fictional sample record includes an example.org test link only, not a real event page. Sample event timing is illustrative; Stage 2 will separate duration, daily hours, and individual sessions. Production build and real device tests required before approval.
+
+
+## Stage 1 — Revision 1.6: Final navigation and panel gutter (October 2026)
+
+**Status:** Implemented in source; production deployment and browser confirmation pending.
+
+* The MAKE WPG CALENDAR identity is an interactive home control on desktop and mobile. It returns to the actual current month according to the visitor's device date, clears selected day and event details, closes search and informational overlays and mobile menu, and resets category filtering to ALL. The identity retains its approved typography, alignment and placement, with subtle hover feedback on hover-capable devices and keyboard focus indication.
+* Desktop Daily Events and Event Details panels reserve an outer right gutter of approximately 18–30 pixels, placing the panel scrollbar inward from the shell edge while retaining the separator and its left content padding. The calendar remains stationary and the panel independently scrollable. Mobile scrolling and layout are unchanged.
+* User-confirmed responsive checks: browser resizing, smartphone landscape orientation and a 1366 × 768 desktop viewport work. Revision 1.5 deployment and previously reviewed interactions passed user testing.
+* Revision 1.6 acceptance tests: home control from previous/future month, daily list, event details and search; verify actual current month rather than fixed October 2026; verify desktop scrollbar gutter in both panels and no unwanted page scrolling; check keyboard focus and smartphone home touch target.
