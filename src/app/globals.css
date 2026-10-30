@@ -134,3 +134,13 @@
 @media (max-width:759px) {
   .mobile-content .description { line-height:1.85; }
 }
+
+/* Revision 1.6: inset desktop panel scrollbar and interactive home identity. */
+.brand-home { display:block; border:0; padding:0; background:transparent; color:inherit; text-align:left; font-family:inherit; line-height:inherit; cursor:pointer; }
+.brand-home:focus-visible { outline:2px solid #fff; outline-offset:5px; }
+@media (hover:hover) { .brand-home { transition:opacity .18s ease; } .brand-home:hover { opacity:.78; } }
+@media (min-width:760px) {
+  /* Reserve a gutter outside the scrolling element, moving the scrollbar inward.
+     The existing left padding and separator remain unchanged. */
+  .side-panel { margin-right:clamp(18px,2.1vw,30px); }
+}
