@@ -91,3 +91,23 @@
   .dots { max-width:36px; gap:4px; }
   .dot { width:6px; height:6px; border-width:1px; }
 }
+
+/* Stage 1 / Revision 1.4: daily listings. Preserve mobile sizes and navigation. */
+@media (min-width:760px) {
+  /* The panel heading begins at the same top axis as the weekday letters. */
+  .side-panel { padding-top:0; border-left:1px solid rgba(255,255,255,.16); }
+  .side-panel .panel-title { align-items:flex-start; padding-top:0; }
+  .side-panel .panel-title h2 { margin:0; font-size:clamp(19px,2vw,29px); line-height:1.15; }
+  .side-panel .event-copy small { font-size:11px; }
+  .side-panel .event-copy strong { font-size:clamp(15px,1.13vw,18px); }
+  .side-panel .event-copy span { font-size:11px; }
+  .side-panel .event-copy em { font-size:10px; }
+  .side-panel .event-row { transition:background-color .18s ease; }
+  .side-panel .event-row:hover { background:rgba(255,255,255,.07); }
+}
+.event-row { appearance:none; border-top:0; border-left:0; border-right:0; background:transparent; font:inherit; }
+.event-row:focus-visible { outline:2px solid white; outline-offset:-2px; }
+@media (max-width:759px) {
+  .mobile-content .event-row { transition:background-color .18s ease; }
+  .mobile-content .event-row:active { background:rgba(255,255,255,.08); }
+}
