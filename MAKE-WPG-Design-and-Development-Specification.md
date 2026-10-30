@@ -840,3 +840,8 @@ Initial deployment confirmed by user: calendar visible, previous month navigatio
 ## Revision 1.4 | 29 October 2026 | Daily Event Listings
 
 Implementation scope: desktop panel heading aligned to the top of the weekday labels; subtle solid panel divider distinct from the dotted calendar grid; modestly larger desktop event time, title, venue and category text; full row click targets and desktop hover feedback. Smartphone close (×) and CALENDAR back controls, event category size, row height, and overall layout retained. Added original abstract SVG sample artwork and sample morning, afternoon, all day, long title, no image and multiday events. All sample events are fictional and not public listings. Chronological sorting now handles AM/PM and ALL DAY. Review pending deployment and browser testing.
+
+
+## Revision 1.5 | 29 October 2026 | Event Details
+
+Approved: desktop DAILY EVENTS navigation aligns with weekday labels; desktop image approximately 16:9; slightly enlarged supporting text; single independent desktop panel scroll with fixed calendar; mobile image, title, date/time, navigation, and full page scrolling retained; mobile description line spacing increased. Venue address is a clickable Google Maps search link, using full address when supplied and venue name plus Winnipeg as fallback for vague sample addresses. Optional LINK field displays Visit Event Page and opens in a new tab; absent links are hidden. Add to Calendar and Share retained. The NEWHAWK fictional sample record includes an example.org test link only, not a real event page. Sample event timing is illustrative; Stage 2 will separate duration, daily hours, and individual sessions. Production build and real device tests required before approval.
