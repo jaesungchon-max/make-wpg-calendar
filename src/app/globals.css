@@ -111,3 +111,26 @@
   .mobile-content .event-row { transition:background-color .18s ease; }
   .mobile-content .event-row:active { background:rgba(255,255,255,.08); }
 }
+
+/* Revision 1.5: event details refinement. */
+.detail-link { display:inline-flex; align-items:center; gap:5px; text-decoration:underline; text-underline-offset:3px; overflow-wrap:anywhere; }
+@media (min-width:760px) {
+  /* Prevent the page and details panel from scrolling independently. */
+  .site:has(.side-panel) { height:100dvh; min-height:0; overflow:hidden; }
+  .site:has(.side-panel) .shell { height:100dvh; min-height:0; overflow:hidden; }
+  .site:has(.side-panel) .workspace { min-height:0; overflow:hidden; }
+  .site:has(.side-panel) .calendar-side { min-height:0; }
+  .site:has(.side-panel) .side-panel { max-height:none; min-height:0; overflow-y:auto; overscroll-behavior:contain; scrollbar-width:thin; }
+  .site:has(.side-panel) .calendar-wrap { min-height:0; }
+  .side-panel:has(.detail) .back { margin-top:0; margin-bottom:18px; }
+  .side-panel .hero-image { height:auto; aspect-ratio:16/9; }
+  .side-panel .detail-category { font-size:11px; }
+  .side-panel .detail h3 { font-size:14px; }
+  .side-panel .detail-time { font-size:13px; }
+  .side-panel .description { font-size:13px; line-height:1.8; }
+  .side-panel .detail dl { font-size:12px; }
+  .side-panel .detail dt { font-size:10px; }
+}
+@media (max-width:759px) {
+  .mobile-content .description { line-height:1.85; }
+}
